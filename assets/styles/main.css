@@ -64,7 +64,7 @@ a{
         --subtitle-weight: bold;
     }
 }
-
+/* ------- END OF TABLET STYLES ------- */
 
 /* ------- MOBILE 390x ------- */
 @media screen and (max-width: 390px) {
@@ -83,3 +83,4 @@ a{
         --subtitle-weight: bold;
     }
 }
+/* ------- END OF MOBILE STYLES ------- */
