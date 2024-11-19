@@ -45,5 +45,72 @@
 
 a{
     text-decoration: none;
+    color: var(--white);
 }
 /* ------- END GENERAL STYLES ------- */
+
+
+nav,
+footer {
+    margin: auto;
+    padding: 1rem 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--onyx); /* Onyx */
+}
+
+nav .links,
+footer .footer-copyright {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .links a,
+footer .footer-copyright a {
+    text-decoration: none;
+    color: var(--white); /* White */
+    position: relative;
+}
+
+nav .links a::after,
+footer .footer-copyright a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--doc-purple); /* DocPurple */
+    transition: all 0.3s ease;
+}
+
+nav .links a:hover::after,
+footer .footer-copyright a:hover::after{
+    width: 100%;
+}
+
+nav .contact {
+  background-color: var(--doc-purple); /* DocPurple */
+  border: none;
+  color: var(--white); /* White */
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: var(--button-fontsize); /* Button Font */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav .contact:hover {
+  background-color: var(--accent-blue); /* AccentBlue */
+  transform: scale(1.125);
+  transition: all 0.3s ease;
+}
+
+footer .footer-socials {
+    display: flex;
+    gap: 1rem;
+}
