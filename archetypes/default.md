@@ -1,12 +1,15 @@
 +++
 date = {{ .Date }}
 publishDate = 
-draft = true
+draft = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 summary = ''
 description = ''
 slug = ''
-feature_image = ''
-categories = []
-tags = []
+[params]
+  author = 'Daniel Cunha'
+  featured = true
+  feature_image = ''
+  categories = []
+  tags = []
 +++

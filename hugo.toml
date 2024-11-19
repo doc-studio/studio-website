@@ -1,3 +1,5 @@
 baseURL = 'https://example.org/'
 languageCode = 'pt-br'
 title = 'DOC Studio | Marketing de Conteúdo'
+[permalinks]
+blog = "/blog/:slug/"

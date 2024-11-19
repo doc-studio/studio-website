@@ -244,7 +244,7 @@
     <div class="blog-section">
         <h2>Insights</h2>
         <div class="latest-posts">
-            {{ range first 3 (where .Site.Pages "Section" "posts") }}
+            {{ range first 3 (where .Site.Pages "Section" "blog") }}
               <div class="card" style="background-image: url('{{ .Params.featured_image }}');">
                 <div class="card-content">
                   <p>{{ .Title }}</p>

@@ -47,6 +47,10 @@ a{
     text-decoration: none;
     color: var(--white);
 }
+
+body {
+    background-color: var(--black-magic);
+}
 /* ------- END GENERAL STYLES ------- */
 
 
