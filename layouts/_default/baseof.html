@@ -3,9 +3,20 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>{{ .Site.Title }} </title>
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/main.css">
+    {{ $global := resources.Get "css/global.css" }}
+    {{ $header := resources.Get "css/menu.css" }}
+    {{ $home := resources.Get "css/home.css" }}
+    {{ $blog := resources.Get "css/blog.css" }}
+    {{ $post := resources.Get "css/post.css" }}
+    {{ $error := resources.Get "css/not-found.css" }}
+    {{ $footer := resources.Get "css/footer.css" }}
+    {{ $responsive := resources.Get "css/responsive.css" }}
+
+    {{ $css := slice $global $menu $home $blog $post $error $footer $responsive | resources.Concat "styles/main.css" | resources.Minify }}
+
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
   </head>
   <body>
     {{ partial "menu" . }}
