@@ -20,6 +20,7 @@
 
     /* Typography */
     --headline-fontsize: 4rem;
+    --bold-fontweight : 700;
     --h2-fontsize: 3rem;
     --h3-fontsize: 2rem;
     --h4-fontsize: 1.5rem;
@@ -30,10 +31,6 @@
     --caption-fontsize: 0.875rem;
     --subtitle-fontsize: 1.5rem;
     --subtitle-weight: 700;
-
-    /* Spacing */
-    --section-padding: 100px auto;
-    --mobile-section-padding: 48px auto;
 }
 
 /* ------- GENERAL STYLES ------- */
@@ -41,6 +38,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a{
@@ -51,6 +52,42 @@ a{
 body {
     background-color: var(--black-magic);
 }
+
+h1 {
+    font-size: var(--headline-fontsize);
+    font-weight: var(--bold-fontweight);
+}
+
+h2 {
+    font-size: var(--h2-fontsize);
+    font-weight: var(--bold-fontweight);
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: var(--h3-fontsize);
+    font-weight: var(--bold-fontweight);
+    margin: 1.5rem 0;
+}
+
+h4 {
+    font-size: var(--h4-fontsize);
+    font-weight: var(--bold-fontweight);
+    margin: 1.25rem 0;
+}
+
+h5 {
+    font-size: var(--h5-fontsize);
+    font-weight: var(--bold-fontweight);
+    margin: 1rem 0;
+}
+
+p {
+    font-size: var(--body-fontsize);
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
 /* ------- END GENERAL STYLES ------- */
 
 

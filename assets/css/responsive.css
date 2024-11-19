@@ -44,6 +44,13 @@
     .all-posts {
         padding: 3rem 10%;
     }
+
+    /* Single Post */
+
+    .post-header,
+    .post-content {
+        padding: 2rem 10%;
+    }
 }
 /* ------- END OF TABLET STYLES ------- */
 

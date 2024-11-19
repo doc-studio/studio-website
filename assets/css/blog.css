@@ -16,8 +16,9 @@
 
 .featured-content img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .featured-post-content {
@@ -29,8 +30,10 @@
 .featured-post-data {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
+}
+
+.featured-post-data h2 {
+    margin: 0;
 }
 
 .featured-post-content a {
